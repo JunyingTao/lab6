@@ -5,6 +5,8 @@
 }
 body { background-color: #FAF7F0; color: #344E41; }
 .bg-1 { background-color: #1d2e25; }
+.navbar-brand, .navbar .nav-link { color: #FFFFFF; }
+.navbar .nav-link:hover { color: #A3B18A; }
 main h1, main h2, main h3, main p { color: #344E41; }
 .card { background-color: #FFFFFF; color: #344E41; }
 .btn-solid.theme-primary {
@@ -19,6 +21,7 @@ main h1, main h2, main h3, main p { color: #344E41; }
 footer, footer p { color: #FFFFFF; }
 .form-control {
   background-color: #A3B18A;
-  color: #344E41;
+  color: #1d2e25;
   border-color: #344E41;
 }
+.form-control::placeholder { color: #1d2e25; }
