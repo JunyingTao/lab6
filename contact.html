@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | 11 Cafe</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar md:navbar-expand bg-1"
+         aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          11 Cafe
+        </a>
+
+        <button class="navbar-toggler" type="button"
+          data-bs-toggle="drawer"
+          data-bs-target="#siteMenu"
+          aria-controls="siteMenu"
+          aria-label="Open navigation menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="drawer drawer-end md:drawer-static"
+             id="siteMenu" tabindex="-1"
+             aria-labelledby="menuTitle">
+
+          <div class="drawer-header">
+            <h2 class="drawer-title" id="menuTitle">Menu</h2>
+            <button class="btn-close" type="button"
+              data-bs-dismiss="drawer"
+              aria-label="Close menu"></button>
+          </div>
+
+          <div class="drawer-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#menu">
+                  Menu
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active"
+                   aria-current="page" href="contact.html">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <main class="container py-6">
+
+    <h1 class="text-center mb-3">Contact Us</h1>
+
+    <p class="text-center mb-5">
+      Have a question or suggestion?
+      We would love to hear from you.
+    </p>
+
+    <!-- Contact Form -->
+    <form action="#" method="get">
+
+      <div class="row g-4">
+
+        <!-- First Name -->
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="firstName">First Name</label>
+            <input class="form-control"
+                   type="text"
+                   id="firstName"
+                   name="firstName"
+                   placeholder="Enter your first name"
+                   required>
+          </div>
+        </div>
+
+        <!-- Last Name -->
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="lastName">Last Name</label>
+            <input class="form-control"
+                   type="text"
+                   id="lastName"
+                   name="lastName"
+                   placeholder="Enter your last name"
+                   required>
+          </div>
+        </div>
+
+        <!-- Email -->
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input class="form-control"
+                   type="email"
+                   id="email"
+                   name="email"
+                   placeholder="name@example.com"
+                   required>
+          </div>
+        </div>
+
+        <!-- Inquiry Type -->
+        <div class="col-12 md:col-6">
+          <div class="form-field">
+            <label for="inquiry">Inquiry Type</label>
+            <select class="form-control"
+                    id="inquiry"
+                    name="inquiry"
+                    required>
+              <option value="">Choose a topic</option>
+              <option value="menu">Menu Question</option>
+              <option value="feedback">Feedback</option>
+              <option value="general">General Inquiry</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Message -->
+        <div class="col-12">
+          <div class="form-field">
+            <label for="message">Message</label>
+            <textarea class="form-control"
+                      id="message"
+                      name="message"
+                      rows="5"
+                      placeholder="Write your message here..."
+                      required></textarea>
+          </div>
+        </div>
+
+        <!-- Consent Checkbox -->
+        <div class="col-12">
+          <div>
+            <input class="check"
+                   type="checkbox"
+                   id="consent"
+                   name="consent"
+                   required>
+            <label for="consent">
+              I agree to be contacted about my inquiry.
+            </label>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <div class="col-12">
+          <button class="btn-solid theme-primary"
+                  type="submit">
+            Submit
+          </button>
+        </div>
+
+      </div>
+    </form>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-1 py-5 mt-6">
+    <div class="container text-center">
+      <p class="mb-1 fw-bold">11 Cafe</p>
+      <p class="mb-0">
+        A little comfort in every cup. © 2026 11 Cafe.
+      </p>
+    </div>
+  </footer>
+
+  <script type="module"
+          src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

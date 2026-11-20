@@ -1,0 +1,24 @@
+:root {
+  --bs-primary-base: #91a373;
+  --bs-primary-fg: #1d2e25;
+  --bs-primary-bg: #708153;
+}
+body { background-color: #FAF7F0; color: #344E41; }
+.bg-1 { background-color: #1d2e25; }
+main h1, main h2, main h3, main p { color: #344E41; }
+.card { background-color: #FFFFFF; color: #344E41; }
+.btn-solid.theme-primary {
+  background-color: #1d2e25;
+  color: #FFFFFF;
+}
+.hero-image, .product-image {
+  height: 390px;
+  object-fit: cover;
+}
+.product-image { height: 230px; }
+footer, footer p { color: #FFFFFF; }
+.form-control {
+  background-color: #A3B18A;
+  color: #344E41;
+  border-color: #344E41;
+}

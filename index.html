@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | 11 Cafe</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar md:navbar-expand bg-1"
+         aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">
+          11 Cafe
+        </a>
+
+        <button class="navbar-toggler" type="button"
+          data-bs-toggle="drawer"
+          data-bs-target="#siteMenu"
+          aria-controls="siteMenu"
+          aria-label="Open navigation menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="drawer drawer-end md:drawer-static"
+             id="siteMenu" tabindex="-1"
+             aria-labelledby="menuTitle">
+
+          <div class="drawer-header">
+            <h2 class="drawer-title" id="menuTitle">Menu</h2>
+            <button class="btn-close" type="button"
+              data-bs-dismiss="drawer"
+              aria-label="Close menu"></button>
+          </div>
+
+          <div class="drawer-body">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active"
+                   aria-current="page" href="index.html">
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#menu">Menu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Carousel Section -->
+    <section class="container py-5">
+      <h1 class="text-center mb-3">
+        Welcome to 11 Cafe
+      </h1>
+      <p class="text-center mb-5">
+        Freshly brewed coffee, comforting treats,
+        and a place to unwind.
+      </p>
+
+      <div id="cafeCarousel" class="carousel"
+           aria-label="Featured cafe images">
+
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <img src="images/cafe.jpg"
+                 class="d-block w-100 hero-image"
+                 alt="Cozy cafe atmosphere">
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <img src="images/Matcha Latte.jpg"
+                 class="d-block w-100 hero-image"
+                 alt="Green matcha latte">
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <img src="images/Cappuccino.jpg"
+                 class="d-block w-100 hero-image"
+                 alt="Cappuccino with milk foam">
+          </div>
+
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+                data-bs-target="#cafeCarousel"
+                data-bs-slide="prev"
+                aria-label="Previous slide">
+          <span class="carousel-control-prev-icon"
+                aria-hidden="true"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+                data-bs-target="#cafeCarousel"
+                data-bs-slide="next"
+                aria-label="Next slide">
+          <span class="carousel-control-next-icon"
+                aria-hidden="true"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Menu Cards -->
+    <section class="container py-5" id="menu"
+             aria-labelledby="menuHeading">
+
+      <h2 class="text-center mb-5" id="menuHeading">
+        More to Enjoy
+      </h2>
+
+      <div class="row g-4">
+
+        <!-- Card 1: Iced Latte -->
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/Iced Latte.jpg"
+                 class="card-img-top product-image"
+                 alt="Iced latte in a glass">
+            <div class="card-body">
+              <h3 class="card-title h5">Iced Latte</h3>
+              <p class="card-text">
+                Chilled espresso with creamy milk and ice.
+              </p>
+              <div class="accordion mb-4">
+                <details>
+                  <summary>Details</summary>
+                  <div class="accordion-body">
+                    Made with espresso, fresh milk, and ice.
+                    Oat milk is available.
+                  </div>
+                </details>
+              </div>
+              <button class="btn-solid theme-primary"
+                      type="button"
+                      data-bs-toggle="dialog"
+                      data-bs-target="#productDialog1">
+                Learn More
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 2: Matcha Latte -->
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/Matcha Latte.jpg"
+                 class="card-img-top product-image"
+                 alt="Matcha latte in a cup">
+            <div class="card-body">
+              <h3 class="card-title h5">Matcha Latte</h3>
+              <p class="card-text">
+                Earthy matcha blended with silky milk.
+              </p>
+              <div class="accordion mb-4">
+                <details>
+                  <summary>Details</summary>
+                  <div class="accordion-body">
+                    Prepared with matcha powder and milk.
+                    Available hot or iced.
+                  </div>
+                </details>
+              </div>
+              <button class="btn-solid theme-primary"
+                      type="button"
+                      data-bs-toggle="dialog"
+                      data-bs-target="#productDialog2">
+                Learn More
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 3: Cappuccino -->
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/Cappuccino.jpg"
+                 class="card-img-top product-image"
+                 alt="Cappuccino with milk foam">
+            <div class="card-body">
+              <h3 class="card-title h5">Cappuccino</h3>
+              <p class="card-text">
+                Rich espresso topped with airy milk foam.
+              </p>
+              <div class="accordion mb-4">
+                <details>
+                  <summary>Details</summary>
+                  <div class="accordion-body">
+                    Espresso, steamed milk, and foam.
+                  </div>
+                </details>
+              </div>
+              <button class="btn-solid theme-primary"
+                      type="button"
+                      data-bs-toggle="dialog"
+                      data-bs-target="#productDialog3">
+                Learn More
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 4: Croissant -->
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/Croissant.jpg"
+                 class="card-img-top product-image"
+                 alt="Golden buttery croissant">
+            <div class="card-body">
+              <h3 class="card-title h5">Croissant</h3>
+              <p class="card-text">
+                A golden, flaky pastry baked until crisp.
+              </p>
+              <div class="accordion mb-4">
+                <details>
+                  <summary>Details</summary>
+                  <div class="accordion-body">
+                    Made with wheat flour, butter, and milk.
+                    Contains gluten and dairy.
+                  </div>
+                </details>
+              </div>
+              <button class="btn-solid theme-primary"
+                      type="button"
+                      data-bs-toggle="dialog"
+                      data-bs-target="#productDialog4">
+                Learn More
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 5: Cheesecake -->
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/Cheesecake.jpg"
+                 class="card-img-top product-image"
+                 alt="Slice of creamy cheesecake">
+            <div class="card-body">
+              <h3 class="card-title h5">Cheesecake</h3>
+              <p class="card-text">
+                Smooth cheesecake with a crumbly crust.
+              </p>
+              <div class="accordion mb-4">
+                <details>
+                  <summary>Details</summary>
+                  <div class="accordion-body">
+                    Made with cream cheese, eggs,
+                    and a biscuit crust.
+                  </div>
+                </details>
+              </div>
+              <button class="btn-solid theme-primary"
+                      type="button"
+                      data-bs-toggle="dialog"
+                      data-bs-target="#productDialog5">
+                Learn More
+              </button>
+            </div>
+          </article>
+        </div>
+
+        <!-- Card 6: Brownie -->
+        <div class="col-12 md:col-6 lg:col-4">
+          <article class="card h-100">
+            <img src="images/Brownie.jpg"
+                 class="card-img-top product-image"
+                 alt="Chocolate brownie on a plate">
+            <div class="card-body">
+              <h3 class="card-title h5">Brownie</h3>
+              <p class="card-text">
+                Fudgy chocolate with a soft, rich centre.
+              </p>
+              <div class="accordion mb-4">
+                <details>
+                  <summary>Details</summary>
+                  <div class="accordion-body">
+                    Made with chocolate, cocoa,
+                    butter, and flour.
+                  </div>
+                </details>
+              </div>
+              <button class="btn-solid theme-primary"
+                      type="button"
+                      data-bs-toggle="dialog"
+                      data-bs-target="#productDialog6">
+                Learn More
+              </button>
+            </div>
+          </article>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Product Dialogs -->
+
+  <dialog class="dialog" id="productDialog1"
+          aria-labelledby="dialogTitle1">
+    <div class="dialog-header">
+      <h2 class="dialog-title h4" id="dialogTitle1">
+        Iced Latte
+      </h2>
+      <button class="btn-close" type="button"
+              data-bs-dismiss="dialog"
+              aria-label="Close dialog"></button>
+    </div>
+    <div class="dialog-body">
+      <p>Our iced latte combines freshly brewed espresso
+         with cold milk for a smooth, refreshing drink.</p>
+    </div>
+    <div class="dialog-footer">
+      <button class="btn-solid theme-primary" type="button"
+              data-bs-dismiss="dialog">Close</button>
+    </div>
+  </dialog>
+
+  <dialog class="dialog" id="productDialog2"
+          aria-labelledby="dialogTitle2">
+    <div class="dialog-header">
+      <h2 class="dialog-title h4" id="dialogTitle2">
+        Matcha Latte
+      </h2>
+      <button class="btn-close" type="button"
+              data-bs-dismiss="dialog"
+              aria-label="Close dialog"></button>
+    </div>
+    <div class="dialog-body">
+      <p>Enjoy the gentle, grassy flavour of matcha,
+         freshly whisked and blended with milk.</p>
+    </div>
+    <div class="dialog-footer">
+      <button class="btn-solid theme-primary" type="button"
+              data-bs-dismiss="dialog">Close</button>
+    </div>
+  </dialog>
+
+  <dialog class="dialog" id="productDialog3"
+          aria-labelledby="dialogTitle3">
+    <div class="dialog-header">
+      <h2 class="dialog-title h4" id="dialogTitle3">
+        Cappuccino
+      </h2>
+      <button class="btn-close" type="button"
+              data-bs-dismiss="dialog"
+              aria-label="Close dialog"></button>
+    </div>
+    <div class="dialog-body">
+      <p>A classic cappuccino balances bold espresso,
+         steamed milk, and delicate foam.</p>
+    </div>
+    <div class="dialog-footer">
+      <button class="btn-solid theme-primary" type="button"
+              data-bs-dismiss="dialog">Close</button>
+    </div>
+  </dialog>
+
+  <dialog class="dialog" id="productDialog4"
+          aria-labelledby="dialogTitle4">
+    <div class="dialog-header">
+      <h2 class="dialog-title h4" id="dialogTitle4">
+        Croissant
+      </h2>
+      <button class="btn-close" type="button"
+              data-bs-dismiss="dialog"
+              aria-label="Close dialog"></button>
+    </div>
+    <div class="dialog-body">
+      <p>Our buttery croissant is a delicious companion
+         to your morning coffee.</p>
+    </div>
+    <div class="dialog-footer">
+      <button class="btn-solid theme-primary" type="button"
+              data-bs-dismiss="dialog">Close</button>
+    </div>
+  </dialog>
+
+  <dialog class="dialog" id="productDialog5"
+          aria-labelledby="dialogTitle5">
+    <div class="dialog-header">
+      <h2 class="dialog-title h4" id="dialogTitle5">
+        Cheesecake
+      </h2>
+      <button class="btn-close" type="button"
+              data-bs-dismiss="dialog"
+              aria-label="Close dialog"></button>
+    </div>
+    <div class="dialog-body">
+      <p>A rich cheesecake with delicate sweetness,
+         perfect for an afternoon treat.</p>
+    </div>
+    <div class="dialog-footer">
+      <button class="btn-solid theme-primary" type="button"
+              data-bs-dismiss="dialog">Close</button>
+    </div>
+  </dialog>
+
+  <dialog class="dialog" id="productDialog6"
+          aria-labelledby="dialogTitle6">
+    <div class="dialog-header">
+      <h2 class="dialog-title h4" id="dialogTitle6">
+        Brownie
+      </h2>
+      <button class="btn-close" type="button"
+              data-bs-dismiss="dialog"
+              aria-label="Close dialog"></button>
+    </div>
+    <div class="dialog-body">
+      <p>A chocolate lover's favourite:
+         a dense brownie with deep cocoa flavour.</p>
+    </div>
+    <div class="dialog-footer">
+      <button class="btn-solid theme-primary" type="button"
+              data-bs-dismiss="dialog">Close</button>
+    </div>
+  </dialog>
+
+  <!-- Footer -->
+  <footer class="bg-1 py-5 mt-6">
+    <div class="container text-center">
+      <p class="mb-1 fw-bold">11 Cafe</p>
+      <p class="mb-0">
+        A little comfort in every cup. © 2026 11 Cafe.
+      </p>
+    </div>
+  </footer>
+
+  <script type="module"
+          src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
