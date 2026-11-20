@@ -13,11 +13,14 @@ main h1, main h2, main h3, main p { color: #344E41; }
   background-color: #1d2e25;
   color: #FFFFFF;
 }
-.hero-image, .product-image {
-  height: 390px;
+.hero-image {
+  height: clamp(220px, 35vw, 390px);
   object-fit: cover;
 }
-.product-image { height: 230px; }
+.product-image {
+  height: 230px;
+  object-fit: cover;
+}
 footer, footer p { color: #FFFFFF; }
 .form-control {
   background-color: #A3B18A;
